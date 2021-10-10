@@ -85,8 +85,7 @@ void loop() {
 void setupPins(void) {
   // set digital pins 2-21 as inputs with the pull-up enabled
   for (int i = 2; i <= 21; i++) {
-    pinMode(i, INPUT);
-    digitalWrite(i, HIGH);
+    pinMode(i, INPUT_PULLUP);
   }
 
   // drive board connected on port A (digital pins 22-29)
